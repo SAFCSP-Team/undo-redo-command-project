@@ -12,17 +12,20 @@ To interact with the program, the user requires a display menu to choose whether
 > All the performed actions are stored in a text file called [actions.txt]().
 
 ## Features 
+-  Use two data structures:
+    - **Undo**: for performed actions.
+    - **Redo**: for undone actions.
 - Display a menu for user interaction.
-- Read the performed actions from `actions.txt` into a data structure called **Undo**.
+- Read the performed actions from `actions.txt` into a **Undo** at startup.
 - Print all the performed actions from the **Undo**.
-- Add a new action to the **Undo**.
+- Add a new action to the **Undo**(clears the **Redo**).
 - Undo the last action (moves it from **Undo to Redo**).
 - Redo the last undone action (moves it from **Redo** back to **Undo**).
-- When the program closes update the `actions.txt` file with the data from the **Undo**.
-
+- Provide clear feedback for invalid operations (e.g., empty Undo/Redo).
+- When the program exits, save the **Undo** data to `actions.txt`.
 
 ## Implementation
-- Create a menu that takes input from the user, based on the user's input do the following:
+- Create a menu that takes input from the user. Based on the user's input, do the following:
   - 1: Print all performed actions
   - 2: Add a new action
   - 3: Undo last action
