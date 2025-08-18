@@ -1,24 +1,24 @@
 # Undo and Redo Command Project
 
 ## Objective 
-Use data structures and algorithms to simulate Undo and Redo operations for a sequence of user actions and store them in a text file.
+Use data structures and algorithms to simulate **undo** and **redo** operations for a sequence of user actions and store them in a text file.
 
 ## Problem 
 
-You are developing a program to simulate Undo and Redo operations for a sequence of user actions. The program uses two data structures (Undo and Redo) to keep track of performed actions so that the user can navigate to new or previous actions.
+You are developing a program to simulate **undo** and **redo** operations for a sequence of user actions. The program uses two data structures (Undo and Redo) to keep track of performed actions so that the user can navigate to new or previous actions.
 
 To interact with the program, the user requires a display menu to choose whether to **print all performed actions**, **add a new action**, **Undo last action**, **Redo last undone action**, or **exit the program**.
 
-> All the performed actions are stored in a text file called [actions.txt]().
+> All the performed actions are stored in a text file called [actions.txt](https://github.com/SAFCSP-Team/undo-redo-command-project/blob/main/src/actions.txt).
 
 ## Features 
 -  Use two data structures:
     - **Undo**: for performed actions.
     - **Redo**: for undone actions.
 - Display a menu for user interaction.
-- Read the performed actions from `actions.txt` into a **Undo** at startup.
-- Print all the performed actions from the **Undo**.
-- Add a new action to the **Undo**(clears the **Redo**).
+- Read the performed actions from `actions.txt` into the **Undo** data structure at startup.
+- Print all the performed actions from the **Undo** data structure.
+- Add a new action to the **Undo** data structure(clears the **Redo**).
 - Undo the last action (moves it from **Undo to Redo**).
 - Redo the last undone action (moves it from **Redo** back to **Undo**).
 - Provide clear feedback for invalid operations (e.g., empty Undo/Redo).
