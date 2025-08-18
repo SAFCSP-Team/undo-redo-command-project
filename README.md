@@ -82,5 +82,5 @@ Goodbye...
 ## Qualification to pass
 - [ ] The code should run successfully.
 - [ ] Write all the required functions correctly.
-- [ ] The Program's output shall match the test case output.
+- [ ] The program's output shall match the test case output.
 
